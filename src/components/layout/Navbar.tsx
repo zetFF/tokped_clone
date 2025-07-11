@@ -7,8 +7,11 @@ import CartPopover from "@/features/cart/components/CartPopover";
 import Link from "next/link";
 import { Button } from "@/components/common/button";
 import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
-import HeaderWrapper from "../common/header-wrapper"; 
-function navbar() {
+import HeaderWrapper from "../common/header-wrapper";
+import AddressModal from "@/features/address/components/SignedOut/AddressModal";
+import AddAddressModal from "@/features/address/components/SignedIn/add-address";
+
+function Navbar() {
   return (
     <>
       <SignedOut>
@@ -39,6 +42,7 @@ function navbar() {
             </div>
           </div>
         </div>
+        <AddressModal />
       </SignedOut>
 
       <SignedIn>
@@ -63,9 +67,10 @@ function navbar() {
             </div>
           </div>
         </div>
+        <AddAddressModal />
       </SignedIn>
     </>
   );
 }
 
-export default navbar;
+export default Navbar;

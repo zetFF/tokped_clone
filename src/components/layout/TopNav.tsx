@@ -18,7 +18,7 @@ function TopNav() {
         <ul className="flex list-none gap-8 px-5">
           {["Tentang Tokopedia", "Kebijakan Privasi", "Syarat dan Ketentuan", "Bantuan"].map((item, idx) => (
             <li key={idx}>
-              <a href="#" className="hover:text-green-600 transition-all font-medium text-xs text-neutral-700">
+              <a href="#" className="hover:text-green-600 transition-all font-medium text-sm text-neutral-500">
                 {item}
               </a>
             </li>
