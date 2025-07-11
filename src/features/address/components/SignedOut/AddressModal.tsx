@@ -25,28 +25,34 @@ const AddressModal: React.FC<AddressModalProps> = ({ currentLocation = "Jakarta 
         </SheetTrigger>
       </div>
 
-      <SheetContent side={undefined} className="rounded-lg p-6 h-[400px] flex flex-col items-center justify-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 fixed">
-        <div className="space-y-6">
+      <SheetContent
+        side={undefined}
+        className="rounded-lg p-3 sm:p-6 h-[320px] sm:h-[400px] flex flex-col items-center justify-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 fixed w-11/12 sm:w-auto">
+        <div className="space-y-4 sm:space-y-6">
           <SheetHeader>
-            <SheetTitle className="text-lg font-semibold text-left">Mau kirim belanjaan kemana?</SheetTitle>
-            <SheetDescription className="text-sm text-left">Biar pengalaman belanjamu lebih baik, pilih alamat dulu.</SheetDescription>
+            <SheetTitle className="text-base sm:text-lg font-semibold text-left">Mau kirim belanjaan kemana?</SheetTitle>
+            <SheetDescription className="text-xs sm:text-sm text-left">Biar pengalaman belanjamu lebih baik, pilih alamat dulu.</SheetDescription>
           </SheetHeader>
 
-          <div className="flex items-center gap-4 p-4 border rounded-lg">
+          <div className="flex items-center gap-2 sm:gap-4 p-2 sm:p-4 border rounded-lg">
             <div className="flex-1">
-              <h2 className="font-semibold">Masuk</h2>
-              <p className="text-sm text-muted-foreground">Masuk dulu biar bisa memilih alamat pengirimanmu</p>
+              <h2 className="font-semibold text-xs sm:text-base">Masuk</h2>
+              <p className="text-xs sm:text-sm text-muted-foreground">Masuk dulu biar bisa memilih alamat pengirimanmu</p>
             </div>
             <Link href="/sign-up" passHref>
-              <Button className="bg-green-600 hover:bg-green-700 font-semibold whitespace-nowrap">Masuk</Button>
+              <Button className="bg-green-600 hover:bg-green-700 font-semibold whitespace-nowrap text-xs sm:text-base">Masuk</Button>
             </Link>
           </div>
 
-          <div className="space-y-2">
-            <h2 className="font-semibold">Mau pakai cara lain?</h2>
-            <div className="relative">
-              <SearchIcon className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
-              <input type="text" placeholder="Pilih Kota atau Kecamatan" className="w-full pl-10 pr-4 py-2 border rounded-md focus:outline-none focus:border-transparent text-sm" />
+          <div className="space-y-1 sm:space-y-2">
+            <h2 className="font-semibold text-xs sm:text-base">Mau pakai cara lain?</h2>
+            <div className="relative w-32 sm:w-auto">
+              <SearchIcon className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 sm:h-5 sm:w-5 text-muted-foreground" />
+              <input
+                type="text"
+                placeholder="Pilih Kota atau Kecamatan"
+                className="w-full pl-8 sm:pl-10 pr-2 sm:pr-4 py-1.5 sm:py-2 border rounded-md focus:outline-none focus:border-transparent text-xs sm:text-sm"
+              />
             </div>
           </div>
         </div>
