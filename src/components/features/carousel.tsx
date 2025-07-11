@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
-import { carouselUrl } from "@/lib/uri";
+import { Carousel, CarouselContent, CarouselItem } from "@/components/common/carousel";
+import { carouselUrl } from "../../lib/constants/uri";
 
 function CustomCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);

@@ -1,8 +1,8 @@
 // import { auth } from "@clerk/nextjs/server";
-import TopNav from "@/components/top-nav";
-import Navbar from "@/components/navbar";
-import Carousel from "@/components/carousel";
-import AccessPanel from "@/components/access-panel";
+import TopNav from "@/components/layout/TopNav";
+import Navbar from "@/components/layout/Navbar";
+import Carousel from "@/components/features/carousel";
+import AccessPanel from "@/components/features/access-panel";
 
 export default async function HomePage() {
   // const { userId } = await auth();

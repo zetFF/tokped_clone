@@ -1,6 +1,6 @@
 import type { FC } from "react";
-import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
-import Links from "@/lib/access-option";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/common/popover";
+import Links from "../../lib/constants/access-option"; 
 
 const AccessOption: FC = () => {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/common/tabs";
 import { Popover, PopoverContent, PopoverTrigger } from "@radix-ui/react-popover";
 import { BellIcon, Settings } from "lucide-react";
 

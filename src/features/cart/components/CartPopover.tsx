@@ -1,7 +1,7 @@
 import React from "react";
-import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/common/popover";
 import { ShoppingCartIcon } from "lucide-react";
-import { cartUrl } from "@/lib/uri";
+import { cartUrl } from "../../../lib/constants/uri";
 
 function CartPopover() {
   return (
