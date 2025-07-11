@@ -1,6 +1,5 @@
 // import { auth } from "@clerk/nextjs/server";
-import TopNav from "@/components/layout/TopNav";
-import Navbar from "@/components/layout/Navbar";
+import Main from "@/components/layout/main-nav";
 import Carousel from "@/components/features/carousel";
 import AccessPanel from "@/components/features/access-panel";
 
@@ -9,12 +8,11 @@ export default async function HomePage() {
 
   return (
     <>
-      <header>
-        <TopNav />
-        <Navbar />
+      <main>
+        <Main />
         <Carousel />
         <AccessPanel />
-      </header>
+      </main>
     </>
   );
 }

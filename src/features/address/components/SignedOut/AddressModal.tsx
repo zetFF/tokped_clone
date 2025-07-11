@@ -13,7 +13,7 @@ interface AddressModalProps {
 const AddressModal: React.FC<AddressModalProps> = ({ currentLocation = "Jakarta Pusat" }) => {
   return (
     <Sheet>
-      <div className="flex justify-end">
+      <div className="flex justify-end mb-5">
         <SheetTrigger asChild>
           <button aria-label="Change delivery address" className="flex items-center gap-2 px-6 cursor-pointer hover:opacity-80 transition-opacity">
             <MapPin className="w-4 h-4" />
@@ -46,11 +46,7 @@ const AddressModal: React.FC<AddressModalProps> = ({ currentLocation = "Jakarta 
             <h2 className="font-semibold">Mau pakai cara lain?</h2>
             <div className="relative">
               <SearchIcon className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
-              <input
-                type="text"
-                placeholder="Pilih Kota atau Kecamatan"
-                className="w-full pl-10 pr-4 py-2 border rounded-md focus:outline-none focus:border-transparent text-sm"
-              />
+              <input type="text" placeholder="Pilih Kota atau Kecamatan" className="w-full pl-10 pr-4 py-2 border rounded-md focus:outline-none focus:border-transparent text-sm" />
             </div>
           </div>
         </div>

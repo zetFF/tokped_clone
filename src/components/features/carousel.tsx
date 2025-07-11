@@ -20,12 +20,12 @@ function CustomCarousel() {
   }, [totalSlides]);
 
   return (
-    <div className="w-full max-w-6xl mt-10 mx-auto overflow-hidden">
+    <div className="w-full max-w-6xl mt-7 mx-auto">
       <Carousel opts={{ startIndex: currentIndex }}>
-        <CarouselContent className="transition-transform duration-700">
+        <CarouselContent className=" transition-transform duration-700 gap-5">
           {carouselUrl.map((src, index) => (
             <CarouselItem key={index}>
-              <img src={src} alt={`slide-${index}`} className="w-full h-[300px] object-cover rounded-xl" />
+              <img src={src} alt={`slide-${index}`} className="w-full h-[320px] object-cover rounded-xl" />
             </CarouselItem>
           ))}
         </CarouselContent>

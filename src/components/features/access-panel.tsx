@@ -7,6 +7,7 @@ import { Product } from "../../types/type";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/common/tabs";
 import AccessOption from "../common/access-option";
 import { items, icons, iconColors } from "../../lib/constants/data";
+import { Button } from "../common/button";
 
 const QuickCategory: FC = () => {
   const [data, setData] = useState<Product[]>([]);
@@ -50,8 +51,7 @@ const QuickEvenRight: FC = () => {
   return (
     <div className="w-full max-w-xl">
       <div className="flex items-center justify-start gap-2">
-        <h1 className="text-xl font-semibold tracking-tight text-gray-800">Top Up & Tagihan
-        </h1>
+        <h1 className="text-xl font-semibold tracking-tight text-gray-800">Top Up & Tagihan</h1>
         <p className="text-green-600 hover:text-green-700  text-sm font-semibold tracking-tight mt-1">Lihat Semua</p>
       </div>
       <Tabs defaultValue="account" className="w-full border border-neutral-100 p-2 mt-4 rounded-lg">
@@ -75,8 +75,20 @@ const QuickEvenRight: FC = () => {
 
         <div className="w-full h-[1px] bg-neutral-200"></div>
 
-        <TabsContent value="account" className="mt-4">
-          <p>Informasi akun kamu tampil di sini.</p>
+        <TabsContent value="account" className="mt-2">
+          <div className="flex gap-4">
+            <div className="flex flex-col gap-2 w-full">
+              <label className="text-sm font-semibold text-neutral-500 tracking-tight">Nomor Telepon</label>
+              <input type="text" className="p-3 w-full rounded-sm text-xs border bg-white border-neutral-200 focus:outline-none" placeholder="Masukan Nomor" />
+            </div>
+            <div className="flex flex-col gap-2 w-full">
+              <label className="text-sm font-semibold text-neutral-500 tracking-tight">Nominal</label>
+              <div className="flex gap-2">
+                <input type="text" className="p-3 w-full rounded-sm text-xs border bg-white border-neutral-200 focus:outline-none" />
+                <Button className="bg-neutral-400 px-7 py-5">Beli</Button>
+              </div>
+            </div>
+          </div>
         </TabsContent>
         <TabsContent value="password" className="mt-4">
           <p>Form untuk password akan ditampilkan di sini.</p>
@@ -100,7 +112,7 @@ const ChildPanel: FC = () => {
         const colorClass = iconColors[item] || "text-gray-600";
 
         return (
-          <div key={item} className="flex items-center gap-2 border p-3 rounded-2xl text-sm hover:bg-gray-100 transition-all">
+          <div key={item} className="flex items-center gap-2 border py-2 px-3 rounded-2xl text-sm hover:bg-gray-100 transition-all">
             <Icon className={`w-4 h-4 ${colorClass}`} />
             <span>{item}</span>
           </div>
