@@ -76,12 +76,12 @@ function ProductDesktop() {
         <div className="flex-1 mt-3">
           {["forYou", "forHer", "forHim"].map((tabValue) => (
             <TabsContent key={tabValue} value={tabValue} className="mt-0">
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6">
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3">
                 {getFilteredProducts(tabValue).map((item: ProductData) => (
                   <div
                     key={item.id}
                     className="flex flex-col items-center text-center p-4 rounded-lg bg-white 
-                      border border-gray-100 hover:shadow-md transition-all cursor-pointer"
+                      transition-all cursor-pointer"
                   >
                     <img src={item.image} alt={item.title} className="w-32 h-32 object-contain mb-4" />
                     <h3 className="text-xs font-medium text-gray-800 mb-2 line-clamp-2 h-10">{item.title}</h3>

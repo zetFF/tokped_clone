@@ -2,7 +2,7 @@
 
 import React from "react";
 import { MapPin, ChevronDown, SearchIcon } from "lucide-react";
-import { Button } from "@/components/common/button";
+import { Button } from "@/components/ui/button";
 import { Sheet, SheetTrigger, SheetContent, SheetHeader, SheetTitle, SheetDescription } from "@/components/common/sheet";
 
 interface AddressModalProps {

@@ -51,9 +51,9 @@ function ProductMobile() {
   return (
     <div className="w-full max-w-6xl mx-auto mt-6">
       <h2 className="text-xl font-bold text-gray-800 mb-4">All Products</h2>
-      <div className="grid grid-cols-2 gap-3">
+      <div className="grid grid-cols-2 gap-1">
         {dataProduct.map((item: ProductData) => (
-          <div key={item.id} className="flex flex-col items-center text-center p-2 rounded-lg  bg-white transition-shadow cursor-pointer">
+          <div key={item.id} className="flex flex-col items-center text-center p-2 rounded-lg border border-neutral-100 bg-white transition-shadow cursor-pointer">
             <img src={item.image} alt={item.title} className="w-16 h-16 object-contain mb-2" />
             <h3 className="text-xs font-semibold text-gray-800 mb-1 line-clamp-2 h-8">{item.title}</h3>
             <div className="flex items-center gap-1">

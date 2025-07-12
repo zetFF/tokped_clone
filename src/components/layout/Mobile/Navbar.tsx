@@ -5,7 +5,7 @@ import { SearchIcon } from "lucide-react";
 import { logoUrl } from "../../../lib/constants/uri";
 import CartPopover from "@/features/cart/components/CartPopover";
 import Link from "next/link";
-import { Button } from "@/components/common/button";
+import { Button } from "@/components/ui/button";
 import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import Mail from "../../common/email/mail";
 import Notification from "../../common/notification";

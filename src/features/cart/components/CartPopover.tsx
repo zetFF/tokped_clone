@@ -9,7 +9,7 @@ function CartPopover() {
       <Popover>
         <PopoverTrigger asChild>
           <button aria-label="Cart" className="relative">
-            <ShoppingCartIcon className="w-5" />
+            <ShoppingCartIcon className="w-5 ml-4 mr-4 md:ml-0 md:mr-0" />
           </button>
         </PopoverTrigger>
         <PopoverContent align="center" sideOffset={8} className="p-0 w-56 sm:w-[350px]">

@@ -7,7 +7,7 @@ import { Product } from "../../../types/type";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/common/tabs";
 import AccessOption from "../../common/access-option";
 import { items, icons, iconColors } from "../../../lib/constants/data";
-import { Button } from "../../common/button";
+import { Button } from "../../ui/button";
 
 const QuickCategory: FC = () => {
   const [data, setData] = useState<Product[]>([]);
