@@ -1,6 +1,6 @@
 import type { FC } from "react";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/common/popover";
-import Links from "../../lib/constants/access-option"; 
+import Links from "../../lib/constants/access-option";
 
 const AccessOption: FC = () => {
   return (
@@ -11,7 +11,7 @@ const AccessOption: FC = () => {
             :
           </button>
         </PopoverTrigger>
-        <PopoverContent align="start" side="bottom" className="w-52 p-4 shadow-md border rounded-lg bg-white">
+        <PopoverContent align="start" side="bottom" className="w-20 p-4 shadow-md border rounded-lg bg-white">
           <nav className="flex flex-col gap-3 text-sm font-medium text-neutral-700">
             {Links.map((label, index) => (
               <a key={index} href="#" className="hover:text-green-600 transition-colors">

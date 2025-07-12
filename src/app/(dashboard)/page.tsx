@@ -1,20 +1,15 @@
 // import { auth } from "@clerk/nextjs/server";
-import Main from "@/components/layout/main-nav";
-import Carousel from "@/components/features/carousel";
-import AccessPanel from "@/components/features/access-panel";
-import SliderCategory from "@/features/category/slider-category";
+import ResponsiveLayout from "@/components/layout/ResponsiveLayout";
+import ResponsiveFeatures from "@/components/features/ResponsiveFeatures";
+import ResponsiveCategory from "@/features/category/ResponsiveCategory";
 
 export default async function HomePage() {
   // const { userId } = await auth();
 
   return (
-    <>
-      <main>
-        <Main />
-        <SliderCategory />
-        <Carousel />
-        <AccessPanel />
-      </main>
-    </>
+    <ResponsiveLayout>
+      <ResponsiveCategory />
+      <ResponsiveFeatures />
+    </ResponsiveLayout>
   );
 }
