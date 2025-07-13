@@ -1,5 +1,5 @@
 import React from "react";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/common/tabs";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Popover, PopoverContent, PopoverTrigger } from "@radix-ui/react-popover";
 import { BellIcon, Settings } from "lucide-react";
 
@@ -29,7 +29,8 @@ function notification() {
                   <TabsTrigger
                     key={tab.value}
                     value={tab.value}
-                    className="flex-1 px-2 sm:px-4 py-1 sm:py-2 text-xs sm:text-sm font-bold text-neutral-600 data-[state=active]:bg-white data-[state=active]:text-green-600 transition-all">
+                    className="flex-1 px-2 sm:px-4 py-1 sm:py-2 text-xs sm:text-sm font-bold text-neutral-600 data-[state=active]:bg-white data-[state=active]:text-green-600 transition-all"
+                  >
                     {tab.label}
                   </TabsTrigger>
                 ))}

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Skeleton } from "@/components/ui/skeleton";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/common/tabs";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ProductData } from "@/types/type";
 
 function ProductDesktop() {

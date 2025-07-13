@@ -1,5 +1,7 @@
+"use client";
+
 import React from "react";
-import { Popover, PopoverContent, PopoverTrigger } from "@/components/common/popover"; 
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"; 
 import { Mail } from "lucide-react"; 
 
 function mail() {

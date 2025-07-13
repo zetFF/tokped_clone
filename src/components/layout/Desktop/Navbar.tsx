@@ -3,13 +3,13 @@
 import React from "react";
 import { SearchIcon } from "lucide-react";
 import { logoUrl } from "../../../lib/constants/uri";
-import CartPopover from "@/features/cart/components/CartPopover";
+import CartPopover from "../../features/cart/CartPopover";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import HeaderWrapper from "../../common/header-wrapper";
-import AddressModal from "@/features/address/components/SignedOut/AddressModal";
-import AddAddressModal from "@/features/address/components/SignedIn/add-address";
+import AddressModal from "@/components/features/address/SignedOut/AddressModal";
+import AddAddressModal from "@/components/features/address/SignedIn/add-address";
 
 function NavbarDesktop() {
   return (

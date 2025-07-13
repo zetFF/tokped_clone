@@ -1,5 +1,5 @@
 import React from "react";
-import CartPopover from "../../features/cart/components/CartPopover";
+import CartPopover from "../features/cart/CartPopover";
 import Notification from "./notification";
 import Mail from "./email/mail";
 

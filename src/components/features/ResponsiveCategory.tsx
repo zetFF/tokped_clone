@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import CategorySliderMobile from "./Mobile/CategorySlider";
+import CategorySliderMobile from "./category/CategorySlider";
 
 function ResponsiveCategory() {
   return (

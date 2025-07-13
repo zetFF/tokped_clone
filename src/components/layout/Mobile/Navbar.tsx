@@ -3,7 +3,7 @@
 import React from "react";
 import { SearchIcon } from "lucide-react";
 import { logoUrl } from "../../../lib/constants/uri";
-import CartPopover from "@/features/cart/components/CartPopover";
+import CartPopover from "@/components/features/cart/CartPopover";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";

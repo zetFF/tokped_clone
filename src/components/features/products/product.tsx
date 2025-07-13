@@ -1,5 +1,5 @@
 import React from "react";
-import ResponsiveProduct from "./ResponsiveProduct";
+import ResponsiveProduct from "../ResponsiveProduct";
 
 function Product() {
   return <ResponsiveProduct />;

@@ -1,10 +1,10 @@
 "use client";
 
 import { useState, useEffect, type FC } from "react";
-import { Carousel, CarouselContent, CarouselItem } from "@/components/common/carousel";
+import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
 import React from "react";
 import { Product } from "../../../types/type";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/common/tabs";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import AccessOption from "../../common/access-option";
 import { items, icons, iconColors } from "../../../lib/constants/data";
 import { Button } from "../../ui/button";

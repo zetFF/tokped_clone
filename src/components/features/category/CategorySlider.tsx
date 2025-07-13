@@ -29,4 +29,3 @@ function CategorySliderMobile() {
 }
 
 export default CategorySliderMobile;
-  

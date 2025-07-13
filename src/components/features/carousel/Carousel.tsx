@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import { Carousel, CarouselContent, CarouselItem } from "@/components/common/carousel";
+import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
 import { carouselUrl } from "../../../lib/constants/uri";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
@@ -48,7 +48,7 @@ function CustomCarouselDesktop() {
         <CarouselContent className="transition-transform duration-700 gap-5">
           {carouselUrl.map((src, index) => (
             <CarouselItem key={index}>
-              <div className="w-full h-[300px] overflow-hidden rounded-xl shadow-sm bg-neutral-100 flex items-center justify-center">
+              <div className="w-full lg:h-[300px] h-[200px] overflow-hidden rounded-xl shadow-sm bg-neutral-100 flex items-center justify-center">
                 <img src={src} alt={`slide-${index}`} className="w-full h-full object-cover" />
               </div>
             </CarouselItem>
@@ -60,13 +60,15 @@ function CustomCarouselDesktop() {
       <button
         onClick={goToPrev}
         className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-3 shadow-md transition-all opacity-0 group-hover:opacity-100"
-        aria-label="Previous slide">
+        aria-label="Previous slide"
+      >
         <ChevronLeft className="w-6 h-6 text-gray-800" />
       </button>
       <button
         onClick={goToNext}
         className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-3 shadow-md transition-all opacity-0 group-hover:opacity-100"
-        aria-label="Next slide">
+        aria-label="Next slide"
+      >
         <ChevronRight className="w-6 h-6 text-gray-800" />
       </button>
 
