@@ -18,9 +18,6 @@ function WelcomeBar() {
         <div className="font-semibold text-sm leading-tight">Hai</div>
         <div className="text-xs text-neutral-500 leading-tight">Cek update di akunmu, yuk-</div>
       </div>
-      <Link href="/sign-in">
-        <Button className="bg-green-600 hover:bg-green-700 text-white font-semibold px-7 py-1 text-xs rounded-md">Masuk</Button>
-      </Link>
     </div>
   );
 }
@@ -55,9 +52,16 @@ function NavbarMobile() {
               <input aria-label="Cari di Tokopedia" type="text" placeholder="Cari di Tokopedia" className="flex-1 bg-transparent text-sm focus:outline-none" />
               <button className="ml-2 font-semibold text-sm text-green-700 hover:text-white hover:bg-green-600 px-3 py-1 rounded transition-colors">Cari</button>
             </div>
-            <Mail />
-            <Notification />
-            <CartPopover />
+            <div className="hidden lg:block">
+              <Mail />
+            </div>
+            <div className="flex items-center">
+              <Notification />
+              <CartPopover />
+            </div>
+          </div>
+          <div className="mt-2 flex -ml-6 -mb-5">
+            <Address />
           </div>
         </nav>
         <WelcomeBar />
