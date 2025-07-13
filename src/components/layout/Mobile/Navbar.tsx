@@ -2,13 +2,13 @@
 
 import React from "react";
 import { SearchIcon } from "lucide-react";
-import { logoUrl } from "../../../lib/constants/uri";
 import CartPopover from "@/components/features/cart/CartPopover";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import Mail from "../../common/email/mail";
 import Notification from "../../common/notification";
+import AddressModal from "../../features/address/SignedOut/AddressModal";
 
 function WelcomeBar() {
   return (
@@ -38,6 +38,9 @@ function NavbarMobile() {
               <button className="ml-2 font-semibold text-sm text-green-700 hover:text-white hover:bg-green-600 px-3 py-1 rounded transition-colors">Cari</button>
             </div>
             <CartPopover />
+          </div>
+          <div className="mt-2 flex -ml-6 -mb-6">
+            <AddressModal />
           </div>
         </nav>
         <WelcomeBar />

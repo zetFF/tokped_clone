@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
@@ -53,29 +52,10 @@ const FooterMobile = () => {
     },
   ];
 
-  const socialMediaIcons = [
-    { name: "Facebook", icon: "F" },
-    { name: "Twitter", icon: "T" },
-    { name: "Pinterest", icon: "P" },
-    { name: "Instagram", icon: "I" },
-  ];
-
-  const securityBadges = [
-    { src: "/file.svg", alt: "PCI DSS" },
-    { src: "/globe.svg", alt: "BSI ISO" },
-    { src: "/globe.svg", alt: "BSI ISO" },
-  ];
-
-  const appStores = [
-    { src: "/next.svg", alt: "Google Play" },
-    { src: "/vercel.svg", alt: "App Store" },
-    { src: "/globe.svg", alt: "AppGallery" },
-  ];
 
   return (
     <footer className="w-full bg-gray-50 border-t border-gray-200 pt-4 pb-4 px-4">
       <div className="flex flex-col gap-4 max-w-md mx-auto">
-        {/* Accordion Sections */}
         <Accordion type="multiple" className="w-full">
           {footerSections.map((section, index) => (
             <AccordionItem key={index} value={`item-${index}`}>
@@ -95,7 +75,6 @@ const FooterMobile = () => {
           ))}
         </Accordion>
 
-        {/* App Promo Section - Always visible */}
         <div className="space-y-3 mt-2">
           <h2 className="font-bold text-base">Nikmatin keuntungan spesial di aplikasi:</h2>
           <ul className="space-y-1">
@@ -112,7 +91,6 @@ const FooterMobile = () => {
           </Link>
         </div>
 
-        {/* Copyright Section */}
         <div className="flex flex-col items-center mt-6 pt-4 border-t border-gray-200 text-xs text-gray-500 gap-3">
           <span>&copy; 2009 - {new Date().getFullYear()}, PT. Tokopedia. All Rights Reserved.</span>
           <div className="flex gap-2">
