@@ -3,7 +3,7 @@
 import { useState, useEffect, type FC } from "react";
 import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
 import React from "react";
-import { Product } from "../../../types/type";
+import { Product } from "../../../lib/types/type";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import AccessOption from "../../common/access-option";
 import { items, icons, iconColors } from "../../../lib/constants/data";

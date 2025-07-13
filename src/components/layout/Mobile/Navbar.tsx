@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import Mail from "../../common/email/mail";
 import Notification from "../../common/notification";
-import AddressModal from "../../features/address/SignedOut/AddressModal";
+import Address from "../../features/address/address";
 
 function WelcomeBar() {
   return (
@@ -39,8 +39,8 @@ function NavbarMobile() {
             </div>
             <CartPopover />
           </div>
-          <div className="mt-2 flex -ml-6 -mb-6">
-            <AddressModal />
+          <div className="mt-2 flex -ml-6 -mb-3">
+            <Address />
           </div>
         </nav>
         <WelcomeBar />

@@ -1,1 +1,1 @@
-export { default as ProductDesktop } from "./Product";
+export { default as ProductDesktop } from "./product";

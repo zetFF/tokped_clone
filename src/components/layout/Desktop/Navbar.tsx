@@ -8,8 +8,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import HeaderWrapper from "../../common/header-wrapper";
-import AddressModal from "@/components/features/address/SignedOut/AddressModal";
-import AddAddressModal from "@/components/features/address/SignedIn/add-address";
+import Address from "../../features/address/address";
 
 function NavbarDesktop() {
   return (
@@ -44,7 +43,7 @@ function NavbarDesktop() {
           </div>
         </nav>
         <div className="mt-2">
-          <AddressModal />
+          <Address />
         </div>
       </SignedOut>
 
@@ -69,7 +68,7 @@ function NavbarDesktop() {
           </div>
         </nav>
         <div className="mt-2">
-          <AddAddressModal />
+          <Address />
         </div>
       </SignedIn>
     </>
