@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { ProductData } from "@/types/type";
+import { ProductData } from "@/lib/types/type";
 
 function ProductDesktop() {
   const [dataProduct, setDataProduct] = useState<ProductData[]>([]);
@@ -63,16 +63,31 @@ function ProductDesktop() {
             { label: "For You", value: "forYou" },
             { label: "For Her", value: "forHer" },
             { label: "For Him", value: "forHim" },
-          ].map((tab) => (
-            <TabsTrigger
-              key={tab.value}
-              value={tab.value}
-              className="w-full px-4 py-2 text-sm  text-neutral-600 
-               data-[state=active]:font-semibold transition-all rounded-md text-left"
-            >
-              {tab.label}
-            </TabsTrigger>
-          ))}
+            { label: "All Products", value: "allProducts" },
+          ].map((tab) =>
+            tab.value === "allProducts" ? (
+              <button
+                key={tab.value}
+                onClick={() => {
+                  // Navigasi ke halaman products-page
+                  if (typeof window !== "undefined") {
+                    window.location.href = "/product/products-page";
+                  }
+                }}
+                className="w-full px-4 py-2 text-sm text-neutral-600 transition-all rounded-md text-left hover:bg-neutral-100"
+                type="button">
+                {tab.label}
+              </button>
+            ) : (
+              <TabsTrigger
+                key={tab.value}
+                value={tab.value}
+                className="w-full px-4 py-2 text-sm  text-neutral-600 
+                 data-[state=active]:font-semibold transition-all rounded-md text-left">
+                {tab.label}
+              </TabsTrigger>
+            )
+          )}
         </TabsList>
 
         <div className="flex-1 mt-3">
@@ -83,8 +98,7 @@ function ProductDesktop() {
                   <div
                     key={item.id}
                     className="flex flex-col items-center text-center p-4 rounded-lg bg-white 
-                      transition-all cursor-pointer"
-                  >
+                      transition-all cursor-pointer">
                     <img src={item.image} alt={item.title} className="w-32 h-32 object-contain mb-4" />
                     <h3 className="text-xs font-medium text-gray-800 mb-2 line-clamp-2 h-10">{item.title}</h3>
                     <div className="flex items-center gap-3">
