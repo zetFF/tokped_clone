@@ -42,8 +42,8 @@ function ProductsPage() {
   }
 
   return (
-    <div className="w-full max-w-6xl mx-auto mt-8">
-      <h2 className="text-2xl font-bold mb-6">All Products</h2>
+    <div className="w-full max-w-6xl mx-auto mt-3">
+      <h2 className="text-2xl font-bold mb-6 tracking-tight">All Products</h2>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3">
         {dataProduct.map((item: ProductData) => (
           <div key={item.id} className="flex flex-col items-center text-center p-4 rounded-lg bg-white transition-all cursor-pointer">
