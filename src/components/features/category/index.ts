@@ -1,1 +1,1 @@
-export { default as CategorySliderMobile } from "./CategorySlider";
+export { default as CategorySliderMobile } from "./category-slider";

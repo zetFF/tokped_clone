@@ -1,1 +1,1 @@
-export { default as AccessPanelDesktop } from "./AccessPanel";
+export { default as AccessPanelDesktop } from "./access-panel";

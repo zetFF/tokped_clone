@@ -12,8 +12,8 @@ function address({ currentLocation = "Jakarta Pusat" }) {
           <Sheet>
             <div className="flex justify-end">
               <SheetTrigger asChild>
-                <button aria-label="Change delivery address" className="flex items-center gap-2 px-6 cursor-pointer hover:opacity-80 transition-opacity">
-                  <MapPin className="w-4 h-4" />
+                <button aria-label="Change delivery address" className="flex items-center gap-1 px-6 cursor-pointer hover:opacity-80 transition-opacity">
+                  <MapPin className="w-4 h-4 text-green-600" />
                   <span className="text-sm">
                     Dikirim ke <b>{currentLocation}</b>
                   </span>
@@ -51,6 +51,7 @@ function address({ currentLocation = "Jakarta Pusat" }) {
             </SheetContent>
           </Sheet>
         </SignedOut>
+        
         <SignedIn>
           <Sheet>
             <div className="flex justify-end mb-5">

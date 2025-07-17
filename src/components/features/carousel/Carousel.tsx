@@ -2,7 +2,7 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
-import { carouselUrl } from "../../../lib/constants/uri";
+import { carouselUrl } from "../../../lib/constants/carousel/uri";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 function CustomCarouselDesktop() {
@@ -43,7 +43,7 @@ function CustomCarouselDesktop() {
   }, [totalSlides]);
 
   return (
-    <div className="w-full max-w-6xl mt-7 mx-auto relative group">
+    <div className="w-full max-w-6xl mt-5 lg:mt-7 mx-auto relative group">
       <Carousel opts={{ startIndex: currentIndex }}>
         <CarouselContent className="transition-transform duration-700 gap-5">
           {carouselUrl.map((src, index) => (
